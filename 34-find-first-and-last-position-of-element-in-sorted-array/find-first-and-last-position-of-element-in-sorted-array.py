@@ -1,7 +1,13 @@
 class Solution:
     def searchRange(self, nums: List[int], target: int) -> List[int]:
         n=len(nums)
-        def lowerbound(nums,target):
+        lb=self.lowerbound(nums,target)
+        if lb==-1 or nums[lb]!=target:
+            return [-1,-1]
+        hb=self.highbound(nums,target)
+        return [lb,hb]
+    def lowerbound(self,nums,target):
+            n=len(nums)
             low=0
             high=n-1
             lb=-1
@@ -14,7 +20,8 @@ class Solution:
                     low=mid+1
             return lb
 
-        def highbound(nums,target):
+    def highbound(self,nums,target):
+            n=len(nums)
             low=0
             high=n-1
             hb=-1
@@ -27,12 +34,7 @@ class Solution:
                     high=mid-1
             return hb
 
-        lb=lowerbound(nums,target)
-        if lb==-1 or nums[lb]!=target:
-            return [-1,-1]
-        hb=highbound(nums,target)
-        return [lb,hb]
-
+        
 
     
 
