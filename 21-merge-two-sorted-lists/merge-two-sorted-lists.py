@@ -12,13 +12,13 @@ class Solution:
             val2 = list2.val if list2 else 0
             currmin=0
             if val1<val2:
-                currmin=val1
-                curr.next=ListNode(currmin)
+                
+                curr.next=list1
                 list1=list1.next
                 
             else:
-                currmin=val2
-                curr.next=ListNode(currmin)
+                
+                curr.next=list2
                 list2=list2.next
             curr=curr.next
         
