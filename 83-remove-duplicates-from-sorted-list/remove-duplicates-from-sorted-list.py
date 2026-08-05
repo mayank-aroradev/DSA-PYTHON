@@ -6,8 +6,7 @@
 class Solution:
     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
         
-        if head is None or head.next is None:
-            return head
+        
         curr=head
         while curr is not None and curr.next is not None:
             if curr.val==curr.next.val:
