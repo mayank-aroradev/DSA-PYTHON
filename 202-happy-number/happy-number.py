@@ -20,6 +20,9 @@ class Solution:
             
         return n==1
 
+        # O(log(n))
+        # O(1) beacuse it will not hold more than 729
+
         
 
             
