@@ -14,4 +14,7 @@ class Solution:
                 i+=1
                 j+=1
         return result
+
+        # (O(N log N + M log M)
+        # O(1)
         
