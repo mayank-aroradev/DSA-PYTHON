@@ -47,3 +47,6 @@ class Solution:
         
         recruteperm(nums,ds,ans,freq)
         return ans
+
+         # tc-O(n!*n)
+         # tc-O(n)
