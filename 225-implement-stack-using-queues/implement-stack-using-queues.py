@@ -17,7 +17,8 @@ class MyStack:
         if self.q:
             return self.q.popleft()
         return None
-
+# O(N)
+# O(N)
         
 
     def top(self) -> int:
