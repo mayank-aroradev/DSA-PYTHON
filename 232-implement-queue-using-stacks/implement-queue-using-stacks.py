@@ -32,6 +32,8 @@ class MyQueue:
 
     def empty(self) -> bool:
         return not self.st1
+
+# O(N)
         
 
 
