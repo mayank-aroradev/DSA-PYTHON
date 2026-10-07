@@ -12,3 +12,6 @@ class Solution:
 
         return total_sum
         
+
+        # O(n^2)
+        # O(1)
