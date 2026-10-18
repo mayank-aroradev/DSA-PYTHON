@@ -38,6 +38,10 @@ class Solution:
             max_area=max(max_area,area)
         return max_area
 
+
+    # O(N*m)+O(n*2M)
+    # O(n*m)+O(n)
+
    
 
         
