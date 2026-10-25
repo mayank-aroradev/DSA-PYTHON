@@ -52,7 +52,8 @@ class LRUCache:
             self._remove(lru)
             del self.cache[lru.key]
 
-        
+# TC=O(1)
+# sc=O(c)
 
 
 # Your LRUCache object will be instantiated and called as such:
